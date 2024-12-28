@@ -55,13 +55,13 @@
        - Enable and start the OrangeFS server on the server machine.
 
 
-   - ***Client-Side Setup:**
+ - **Client-Side Setup:**
 
- - Install the OrangeFS client on the client machine, ensuring it can interact         with the server.
+    - Install the OrangeFS client on the client machine, ensuring it can interact         with the server.
 
- - Mount the shared file system on the client and verify connectivity to the server.
+    - Mount the shared file system on the client and verify connectivity to the server.
 
- - Test I/O operations by creating test files on the mounted directory.
+    - Test I/O operations by creating test files on the mounted directory.
 
 ## 5. Verification and Testing:
 
@@ -95,7 +95,67 @@
 <br>
 
 
-*********** Implementation Steaps ************
+
+
+## Prerequisites for PVFS Implementation 
+
+1. System Requirements:
+
+   - CentOS 8 OS.
+   - Server with an extra HDD and client with sufficient storage.
+   - Static IPs for all nodes in the same network.
+
+2. Software Requirements:
+
+   - Access CentOS vault and ELRepo repositories.
+   - Install:
+         - Server: orangefs, orangefs-server
+         - Client: orangefs, orangefs-fuse
+   - Latest kernel from ELRepo.
+
+3. User Privileges:
+
+   - Root access on both server and client nodes.
+
+4. Network Setup:
+
+   - Set hostnames (ofs-srv-1, ofs-client-1).
+   - Update /etc/hosts with static IPs.
+
+5. Security:
+
+   - Disable firewall and SELinux.
+
+6. Storage:
+
+   - Attach, format, and mount additional HDD on the server.
+
+7. Tools:
+
+   - Install nano, epel-release, pvfs2-ping, and dd.
+
+8.Connectivity:
+
+   - Verify communication between server and client nodes.
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+*********** Implementation Steps ************
 
 
 
