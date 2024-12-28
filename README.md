@@ -301,10 +301,11 @@ pvfs2-genconfig /etc/orangefs/orangefs.conf
 ```
 
   - When prompted, enter the following details:
-        - Protocol type: tcp
-        - Port number: 3334
-        - Directory name: /mnt/ofsmnt
-        - Hostnames: ofs-srv-1
+
+      - Protocol type: tcp
+      - Port number: 3334
+      - Directory name: /mnt/ofsmnt
+      - Hostnames: ofs-srv-1
 
 
 ### 10. Start OrangeFS Server:
